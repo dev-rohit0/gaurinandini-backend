@@ -9,7 +9,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const allTimeSlots = generateTimeSlots();
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin:'https://www.gaurinandini-ayurveda.vercel.app'
+}
+  
+))
 // Connect to MongoDB
 connectToDB();
 
