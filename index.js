@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const allTimeSlots = generateTimeSlots();
 app.use(express.json());
 app.use(cors({
-  origin:'https://gaurinandini-backend.onrender.com'
+  origin:'https://gaurinandini-ayurveda.vercel.app'
 }
   
 ))
